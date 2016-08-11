@@ -1,4 +1,4 @@
-package soft.test.comment;
+package soft.test.comment.domain;
 
 import javax.persistence.*;
 import java.io.Serializable;

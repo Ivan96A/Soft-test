@@ -1,4 +1,4 @@
-package soft.test.comment;
+package soft.test.comment.repository;
 
 import javax.persistence.Entity;
 import javax.persistence.Table;
