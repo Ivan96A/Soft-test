@@ -4,6 +4,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
 import soft.test.user.domain.CustomUser;
 
 import java.util.List;
@@ -11,7 +12,7 @@ import java.util.List;
 /**
  * Created by Iwan on 17.08.2016.
  */
-public interface UserService {
+public interface UserService extends UserDetailsService {
 
     UserDetails loadUserByUsername(String username);
 
