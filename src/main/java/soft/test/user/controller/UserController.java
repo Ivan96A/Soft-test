@@ -11,6 +11,7 @@ import org.springframework.security.access.annotation.Secured;
 import org.springframework.web.bind.annotation.*;
 import soft.test.user.domain.CustomUser;
 import soft.test.user.service.UserService;
+import org.springframework.util.Assert;
 
 import java.security.Principal;
 import java.util.List;
@@ -30,13 +31,12 @@ public class UserController {
     private static final Logger LOG = LoggerFactory.getLogger(UserController.class);
 
     @Autowired
-    @Qualifier("userService")
     private  UserService userService;
 
     @RequestMapping(method = RequestMethod.GET)
     @Secured(value = {ROLE_ADMIN})
     public ResponseEntity<List<CustomUser>> getAll() {
-        return new ResponseEntity<List<CustomUser>>(userService.getAllUsers(), HttpStatus.OK);
+        return new ResponseEntity<>(userService.getAllUsers(), HttpStatus.OK);
     }
 
     @RequestMapping(

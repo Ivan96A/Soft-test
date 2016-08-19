@@ -14,5 +14,5 @@ public interface UserRepository extends JpaRepository<CustomUser, Long>{
     CustomUser findOneByUsername(@Param("username") String username);
 
     @Query("update CustomUser u set u.password = :password where u.id = :id")
-    void changePassword(@Param("user") CustomUser customUser);
+    void changePassword(@Param("password") String password, @Param("id") Long id);
 }

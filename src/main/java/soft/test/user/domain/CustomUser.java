@@ -1,13 +1,13 @@
 package soft.test.user.domain;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.Serializable;
 
 /**
  * Created by Iwan on 17.08.2016.
  */
+@Entity
+@Table(name = "users")
 public class CustomUser implements Serializable {
 
     @Id
