@@ -1,0 +1,14 @@
+{
+  "name": "jscs",
+  "homepage": "https://github.com/markelog/node-jscs",
+  "version": "2.0.0",
+  "_release": "2.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.0.0",
+    "commit": "781bc62f3a9b5cd4961a3d8854a3b473fa76a1cd"
+  },
+  "_source": "https://github.com/markelog/node-jscs.git",
+  "_target": "~2.0.0",
+  "_originalSource": "jscs"
+}

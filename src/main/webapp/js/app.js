@@ -16,6 +16,10 @@ softDealApp.config(['$routeProvider', '$locationProvider', function($routeProvid
 			templateUrl:'template/contact.html',
 			controller:'ContactController'
 		})
+		.when('/login', {
+			templateUrl:'template/login.html',
+			controller:'LoginController'
+		})
 		.otherwise({
 			redirectTo: "/"
 		});
@@ -34,3 +38,8 @@ softDealApp.controller('NewsController', ['$scope', '$http', '$location', functi
 softDealApp.controller('ContactController', ['$scope', '$http', '$location', function($scope, $http, $location) {
 
 }]);
+
+softDealApp.controller('LoginController', ['$scope', '$http', '$location', function($scope, $http, $location) {
+
+}]);
+
